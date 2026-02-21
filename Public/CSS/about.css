@@ -1,0 +1,161 @@
+.historic_photo_container{
+    margin-top: 25px;
+    height: 500px;
+    width: 100%;
+    justify-self: start;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.historic_photo_tile_tab{
+    height: 500px;
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historic_photo_tile{
+    font-size: 54px;
+    font-style: italic;
+    font-weight:600;
+    color:#C71E64;
+}
+
+.old_new_text_container{
+    height: 550px;
+    width: 90%;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.old_new_text_innercontainer{
+    height: 90%;
+    width: 90%;
+}
+
+.old_new_text{
+    font-size: 35px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.old_new_img{
+    height: 550px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter_tab{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+
+.y120{
+    color: white;
+    font-size: 100px;
+}
+
+.y120_text{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.y500{
+    color: white;
+    font-size: 100px
+    
+}
+
+.y500_text{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.y30{
+    color: white;
+    font-size: 100px;
+}
+
+.y30_text{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.y20{
+    color: white;
+    font-size: 100px;
+}
+
+.y20_text{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.testimonial_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cy120{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: #273F4F;
+}
+
+.cy500{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: #273F4F;
+}
+
+.cy30{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: #273F4F;
+}
+.cy20{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: #273F4F;
+}
+
+

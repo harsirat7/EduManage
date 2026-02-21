@@ -1,0 +1,168 @@
+.quote_tab{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    color: red;
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.quote_sayer{
+    color: red;
+}
+
+.pathway_title_tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.pathway_title{
+    color: crimson;
+    font-size: 75px;
+    font-family: fantasy;
+}
+
+.primary_school_container{
+    height: 550px;
+    width: 95%;
+    background-color: #225da1;
+    border-radius: 50px;
+}
+
+.middle_school_container{
+    height: 550px;
+    width: 95%;
+    background-color:#a10a2d;
+    border-radius: 50px;    
+}
+
+.high_school_container{
+    height: 550px;
+    width: 95%;
+    background-color:#28632c;
+    border-radius: 50px;    
+}
+
+
+.secondary_school_container{
+    background-color: #143D60;
+    height: 550px;
+    width: 95%;
+    border-radius: 50px;
+}
+
+.main_tile_tab{
+    height: 75px;
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title{
+    font-family: fantasy;
+    font-size: 45px;
+    color: wheat;
+}
+
+.item_container{
+    height: 80%;
+    width: 100%;
+    justify-self: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.item_box{
+    height: 100%;
+    width: 30%;
+}
+
+.sub-heading{
+    justify-self: center;
+    color:wheat;
+    font-family: fantasy;
+    font-size: 45px;
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 30px;
+    list-style: none;
+    margin-top: 25px;
+    gap: 1rem;
+    text-align: center;
+}
+
+.smart_class_content_tab{
+    height: 450px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.smart_classroom_img{
+    border-radius: 25px;
+    margin-top: 50px;
+    border: 5px solid black;
+}
+
+.smartclass_title{
+    font-size: 50px;
+    font-family: fantasy;
+    color: #a10a2d;
+    justify-self: center;
+}
+
+.smartclass_list{
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #a10a2d;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.sports_img{
+    height: 450px;
+    width: 90%;
+    margin-top: 100px;
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+.sport_content_tab{
+    height: 550px;
+    width: 85%;
+    /* background-color: #a10a2d; */
+}
+
+.sport_title{
+    color: #468A9A;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sport_content{
+    font-size: 25px;
+    color: #468A9A;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}

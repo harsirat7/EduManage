@@ -1,0 +1,106 @@
+.mainContainer{
+    height: 550px;
+    width: 850px;
+    background-color: crimson;
+    justify-self: center;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+
+.headingTab{
+    height: 75px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: wheat;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+.formTab{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelsTab{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputsTab{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.labels{
+    color: wheat;
+    font-size: 45px;
+    font-family: fantasy;
+}
+
+.inputs{
+    width: 75%;
+    height: 75px;
+    text-align: center;
+    border-radius: 9999px;
+    border-style: none;
+}
+
+.btnTab{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btnn{
+    height: 50px;
+    width: 250px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: none;
+    border-radius: 9999px;
+}
+
+.messageTab{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message{
+    color: wheat;
+    font-size: 35px;
+    font-family: fantasy;
+}

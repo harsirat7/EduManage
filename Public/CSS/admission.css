@@ -1,0 +1,127 @@
+.welcome_img{
+    margin-top: 100px;
+    height: 450px;
+    margin-left: 10px;
+}
+
+.welcome_tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 100px;
+}
+
+.welcome_mainheading{
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+    color: crimson;
+}
+
+.welcome_text{
+    font-size: 35px;
+    text-align: center;
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.criteria_tab{
+    height: 700px;
+    width: 95%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.national_tab{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.international_tab{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list_heading{
+    font-family: fantasy;
+    color: crimson;
+    align-self: center;
+    font-size:45px;
+}
+
+.list{
+    color: crimson;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+}
+.form_body{
+    display: flex;
+}
+
+.form_tab{
+    height: 750px;
+    width: 95%;
+    align-self: center;
+    background-color: #f2c4e6;
+    border-radius: 15px;
+}
+
+.left_side{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right_side{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labels{
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inputs{
+    margin-top: 10px;
+    height: 30px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 9999px;
+    text-align: center;    
+}
+
+.submit_btn_tab{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.submit_btn{
+    height: 50px;
+    width: 350px;
+    border-radius: 9999px;
+}

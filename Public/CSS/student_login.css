@@ -1,0 +1,82 @@
+.login_tab{
+    height: 500px;
+    width: 600px;
+    background-color: crimson;
+    justify-self: center;
+    margin-top: 100px;   
+    border-radius: 20px; 
+    border: 1px solid black;
+}
+
+.main_heading_tab{
+    height: 100px;
+    width: 100%;
+    border-radius:20px 20px 0px 0px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_heading{
+    font-size: 60px;
+    font-family: fantasy;
+    color: white;
+}
+
+.form_tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+}
+
+.label_tab{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labels{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: wheat;
+    margin-top: 50px;
+
+}
+
+.inputs{
+    border-style: none;
+    border-radius: 9999px;
+    width: 85%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.input_tab{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_tab{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.btnn{
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+}

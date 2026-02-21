@@ -1,0 +1,35 @@
+.main_container{
+    width: 15%;
+    height: 100vh;
+    background-color: #660f07;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.buttons_tab{
+    height: 90%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.links{
+    text-decoration: none;
+    font-size:25px;
+    font-family: fantasy;
+    color: wheat;
+}
+
+.links:hover{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px   ;
+}
+

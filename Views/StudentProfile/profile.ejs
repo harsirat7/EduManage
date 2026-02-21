@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/studentprofile.css">
+    <%-include("../Commons/Title/title.ejs")%>
+        <%-include("../Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+    <%-include("../Commons/Header/student_dashboard.ejs")%>
+
+        <div class="profile_tab">
+            <div class="img_tab">
+                <h2 class="img"><%=record.name[0]%></h2>
+            </div>
+
+            <div class="content_tab">
+                <div class="inner_content_tab">
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Name:</h2>
+                        <h2 class="content_v"><%=record.name%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Roll Number:</h2>
+                        <h2 class="content_v"><%=record.roll_no%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Date Of Birth:</h2>
+                        <h2 class="content_v"><%= record.dob.toISOString().split('T')[0] %></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Nationality:</h2>
+                        <h2 class="content_v"><%=record.nationality%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Father's Name:</h2>
+                        <h2 class="content_v"><%=record.father_name%></h2>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="inner_content_tab">
+                    <div class="inner_most_content tab">
+                        <h2 class="content">ID:</h2>
+                        <h2 class="content_v"><%=record.id%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Class:</h2>
+                        <h2 class="content_v"><%=record.class%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Gender:</h2>
+                        <h2 class="content_v"><%=record.gender%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Phone Number:</h2>
+                        <h2 class="content_v"><%=record.phone_number%></h2>
+                    </div>
+
+                    <div class="inner_most_content tab">
+                        <h2 class="content">Mother's Name:</h2>
+                        <h2 class="content_v"><%=record.mother_name%></h2>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+        <%if(locals.err){%>
+            <script>
+                alert("<%=err%>")
+            </script>
+            <%}%>
+
+
+        <%-include("../Commons/CDN/script.ejs")%>
+</body>
+
+</html>

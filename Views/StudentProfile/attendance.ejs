@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/attendance.css">
+    <%-include("../Commons/Title/title.ejs")%>
+        <%-include("../Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+    <%-include("../Commons/Header/student_dashboard.ejs")%>
+
+    <div class="outer_cantainer">
+        <div class="upper_tab">
+            <div class="element_containers" style="background-color:#225da1 ;">
+                <h2 class="heading">Total Working Days</h2>
+                <h2 class="records"><%=re.total%></h2>
+            </div>
+
+            <div class="element_containers" style="background-color: #a10a2d;">
+                <h2 class="heading">Total Presents</h2>
+                <h2 class="records"><%=re.present%></h2>
+            </div>
+
+        </div>
+
+        <div class="lower_tab">
+
+            <div class="element_containers" style="background-color: #28632c;">
+                <h2 class="heading">Total Absents</h2>
+                <h2 class="records"><%=re.absent%></h2>
+            </div>
+
+            <div class="element_containers" style="background-color: #143D60;">
+                <h2 class="heading">Attendance Percentage</h2>
+                <h2 class="records"><%=re.pert%></h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <%if(locals.err){%>
+        <script>
+            alert("<%=err%>")
+        </script>
+        <%}%>
+
+    <%-include("../Commons/CDN/script.ejs")%>
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+.User_header{
+    height: 200px;
+    overflow: hidden;
+}
+
+
+.school-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.school-text{
+    font-family: fantasy;
+    color: wheat;
+    font-size: 3.8rem;
+    margin: 0;              
+}
+
+.school-since{
+    color: wheat;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.nav_bar_css{
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #FE6244;
+}
+
+
+.nav_items{
+    display: flex;
+    gap: 60px;             
+    font-family: fantasy;
+    font-size: 1.8rem;
+    color: black;
+    color: #f5deb3;
+    text-decoration: none;
+}
+
+.nav_links{
+
+    font-family: fantasy;
+    font-size: 1.8rem;
+    color: wheat;
+    text-decoration: none;
+    padding: 6px 18px;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+
+.nav_links:hover{
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    text-decoration: none;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card {
+    height: 100%;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+    height: 400px;
+    /* width: 400px; */
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.05rem;
+}
+
+.principal_div{
+    padding-top: 100px;
+}
+
+.principal_title{
+    font-size: 80px;
+    padding-top: 25px;
+    font-weight: bolder;
+}
+
+.principal_vision_block{
+    height: 750px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.adm_container{
+    padding-top: 200px;
+}
+.vision_box{
+    height: 100%;
+    width: 75%;
+    background-color:#94B4C1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vision_container_text{
+    width: 95%;
+    height: 90%;
+    padding-top: 25px;
+    /* background-color: #FE6244; */
+}
+
+.vision_text{
+    text-align: justify;
+    color: white;
+    font-size: 25px;
+    font-family: fantasy;
+
+}
+
+.activity_title{
+    font-family: fantasy;
+    color:#547792;
+    font-size:70px;
+
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+
+.admission_tab{
+    /* background-color: aqua; */
+    height: 900px;
+    width: 600px;
+    z-index: 1;
+    background-color: #FE6244;
+
+}
+
+.admission_form_btn_tab{
+    height: 100px;
+    background-color:#7d8796;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admission_form_btn{
+    height: 75px;
+    width: 250px;;
+    font-family: fantasy;
+    color:wheat !important;
+    font-size: 24px !important;
+}
+
+.national_form{
+    height: 700px;
+    width:100%;
+    background-color: #FE6244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.National_forms_labels{
+    height: 90%;
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.national_forms_input{
+    height: 90%;
+    width: 50%;
+    /* background-color: black; */
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.national_label{
+    height:75px;
+    width: 90%;
+    font-size: 35px;
+    color: white;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.input_bars{
+    height:75px;
+    width: 90%;
+    font-size: 35px;
+}
+
+.international_form{
+    height: 700px;
+    width:100%;
+    background-color: #FE6244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interNational_forms_labels{
+    height: 90%;
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.international_forms_input{
+    height: 90%;
+    width: 50%;
+    /* background-color: black; */
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.international_label{
+    height:75px;
+    width: 90%;
+    font-size: 35px;
+    color: white;
+    justify-content: center;
+    font-family: fantasy; 
+}
+
+.adm_img{
+    z-index: 10;
+    position: relative;
+    transform: translateX(10px) translateY(100px);
+}
+
+.adm_submit_div_btn{
+    height: 75px;
+    width: 80%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5deb3;
+    justify-self: center;
+}
+
+.adm_submit_btn{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color:#ED985F;
+    font-family: fantasy;
+    font-size: 35px;
+
+}
+
+.connection_tab{
+    height: 850px;
+    width: 100%;
+}
+
+.con_title{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.con_title_text{
+    font-size: 80px;
+    font-family: fantasy;
+    color: #FE6244;    
+}
+
+.con_content_tab{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.con_content{
+    font-family: fantasy;
+    color: #434E78;
+    font-size: 28px;
+}
+
+.footer_tab{
+    height: 600px;
+    width: 100%;
+    /* background-color: #FE6244; */
+    overflow: hidden;
+
+
+}
+
+.footer_ql_tab{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ql_title{
+    font-size: 50px;
+    margin-top: 15px;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: 2px;
+    font-family: fantasy;
+    color: wheat;
+}
+
+.qls_tab{
+    height: 450px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.links_list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+
+}
+
+.footer_links{
+    text-decoration: none;
+    color: wheat;
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.map_tab{
+    height: 100%;
+    width: 100%;
+}
+
+.contact_tab{
+    height: 90%;
+    width: 90%;
+}
+
+.contact_list{
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact_list_elements{
+    color: wheat;
+    font-size: 25px;
+}

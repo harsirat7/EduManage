@@ -1,0 +1,52 @@
+.heading{
+    font-size: 45px;
+    font-family: fantasy;
+    color: wheat;
+}
+
+.mainContainer{
+    height: 550px;
+    width: 1150px;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 50px;
+    background-color: crimson;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boxContainer{
+    height: 40%;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.inputBar{
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnTab{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnn{
+    height: 70px;
+    width: 300px;
+    border-style: none;
+    border-radius: 9999px;
+    font-size: 35px;
+    font-family: fantasy;
+}

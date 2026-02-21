@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/adminHeader.css">
+    <link rel="stylesheet" href="/CSS/adminApplication.css">
+    <%-include("../Commons/Title/title.ejs")%>
+        <%-include("../Commons/CDN/style.ejs")%>
+            <%-include("../Commons/CDN/tablecss.ejs")%>
+</head>
+
+<body>
+    <%-include("../Commons/Header/adminDashboard.ejs")%>
+
+        <div class="mainContainer">
+            <table id="stdlist">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Subject</th>
+                        <th>Body</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% if (locals.msg && msg.length> 0) { %>
+                        <% msg.forEach(stud=> { %>
+                            <tr>
+                                <td><%= stud.id%></td>
+                                <td><%= stud.name%></td>
+                                <td><%= stud.date%></td>
+                                <td><%= stud.subject%></td>
+                                <td><%= stud.body%></td>
+                            </tr>
+                            <% }) %>
+                                <% } else { %>
+                                    <tr>
+                                        <td colspan="12">No Data Found</td>
+                                    </tr>
+                                    <% } %>
+                </tbody>
+
+            </table>
+        </div>
+
+
+
+
+        <%if(locals.err){%>
+            <script>
+                alert("<%=err%>")
+            </script>
+
+            <%}%>
+
+
+
+              
+
+
+                <%-include("../Commons/CDN/tablejs.ejs")%>
+             <%-include("../Commons/CDN/script.ejs")%>
+               <script>
+                    $('#stdlist').DataTable();
+                </script>
+</body>
+
+</html>

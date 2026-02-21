@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/adminHeader.css">
+    <link rel="stylesheet" href="/CSS/addAdmin.css">
+    <%-include("../Commons/Title/title.ejs")%>
+    <%-include("../Commons/CDN/style.ejs")%>
+</head>
+<body>
+    <%-include("../Commons/Header/adminDashboard.ejs")%>
+    
+    <div class="mainContainer">
+        <div class="headingTab">
+            <h2 class="heading">Add New Admin</h2>
+        </div>
+
+        <div class="formTab">
+            <form action="/addnewadmin" class="form" id="form" method="post">
+                <div class="labelsTab">
+                    <label for="name" class="labels">Name</label>
+                    <label for="password" class="labels">password</label>
+                </div>
+
+                <div class="inputsTab">
+                    <input type="text" class="inputs" name="name">
+                    <input type="password" class="inputs" name="password">
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="btnTab">
+            <button type="submit" form="form" class="btnn">Submit</button>
+        </div>
+
+        <%if(locals.msg){%>
+        <div class="messageTab">
+            <h2 class="message"><%=msg%></h2>
+        </div>
+
+        <%}%>
+
+
+
+    </div>
+
+   
+    
+
+    <%-include("../Commons/CDN/script.ejs")%>
+</body>
+</html>

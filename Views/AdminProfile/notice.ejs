@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/adminHeader.css">
+    <link rel="stylesheet" href="/CSS/notice.css">
+    <%-include("../Commons/Title/title.ejs")%>
+        <%-include("../Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <h2 class="heading">Push Notification</h2>
+
+
+        <div class="boxContainer">
+            <form action="/pushnotice" method="post" id="form" style="width: 100%;height: 100%;">
+                <input type="text" class="inputBar" name="Tinput">
+            </form>
+        </div>
+
+        <div class="btnTab">
+            <button class="btnn" type="submit" form="form">Submit</button>
+        </div>
+
+
+    </div>
+
+
+    <%if(locals.msg){%>
+        <script>
+            alert("<%=msg%>");
+        </script>
+        <%}%>
+
+        <%if(locals.error){%>
+            <script>
+                alert("<%=error%>");
+            </script>
+            <%}%>
+
+
+
+
+
+
+
+
+
+
+    <%-include("../Commons/Header/adminDashboard.ejs")%>
+
+</body>
+
+</html>

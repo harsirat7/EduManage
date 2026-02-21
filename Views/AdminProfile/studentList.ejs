@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/adminHeader.css">
+    <link rel="stylesheet" href="/CSS/studentList.css">
+    <%-include("../Commons/Title/title.ejs")%>
+        <%-include("../Commons/CDN/style.ejs")%>
+            <%-include("../Commons/CDN/tablecss.ejs")%>
+</head>
+
+<body>
+    <%-include("../Commons/Header/adminDashboard.ejs")%>
+
+        <div class="mainContainer">
+            <table id="stdlist">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Nationality</th>
+                        <th>Phone Number</th>
+                        <th>Last Institution</th>
+                        <th>Father Name</th>
+                        <th>Mother Name</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% if (locals.msg && msg.length> 0) { %>
+                        <% msg.forEach(stud=> { %>
+                            <tr>
+                                <td><%= stud.id %></td>
+                                <td><%= stud.roll_no %></td>
+                                <td><%= stud.name %></td>
+                                <td><%= stud.class %></td>
+                                <td><%= stud.gender %></td>
+                                <td><!-- <%= stud.dob ? new Date(stud.dob).toISOString().split[0] : '' %> -->07-05-2007</td>
+                                <td><%= stud.nationality %></td>
+                                <td><%= stud.phone_number %></td>
+                                <td><%= stud.last_institution %></td>
+                                <td><%= stud.father_name %></td>
+                                <td><%= stud.mother_name %></td>
+                            </tr>
+                            <% }) %>
+                                <% } else { %>
+                                    <tr>
+                                        <td colspan="12">No Data Found</td>
+                                    </tr>
+                                    <% } %>
+                </tbody>
+
+            </table>
+        </div>
+
+
+
+
+        <%if(locals.err){%>
+            <script>
+                alert("<%=err%>")
+            </script>
+
+            <%}%>
+
+
+
+              
+
+
+                <%-include("../Commons/CDN/tablejs.ejs")%>
+             <%-include("../Commons/CDN/script.ejs")%>
+               <script>
+                    $('#stdlist').DataTable();
+                </script>
+</body>
+
+</html>

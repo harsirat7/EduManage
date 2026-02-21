@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/adminLogIn.css">
+    <%-include("../Commons/Title/title.ejs")%>
+        <%-include("../Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="headingTab">
+            <h1 class="heading">Log In</h1>
+        </div>
+
+
+        <div class="formTab">
+            <form action="/adminLog" class="form" method="post" id="adminform">
+
+                <div class="labelsTab">
+                    <label for="id" class="labels">ID</label>
+                    <label for="password" class="labels">Password</label>
+                </div>
+
+                <div class="inputsTab">
+                    <input type="number" class="inputs" name="id" id="id" required>
+                    <input type="password" class="inputs" name="password" id="password" required>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="btnTab">
+            <button type="submit" form="adminform" class="btnn">Submit</button>
+        </div>
+
+
+        <%if(locals.msg){%>
+            <div class="messageTab">
+                <h2 class="message">
+                    <%=msg%>
+                </h2>
+            </div>
+         <%}%>
+
+
+    </div>
+
+
+
+
+
+
+    <%-include("../Commons/CDN/script.ejs")%>
+</body>
+
+</html>

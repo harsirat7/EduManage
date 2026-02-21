@@ -1,0 +1,45 @@
+.mainContainer{
+    height: 650px;
+    width: 1250px;
+    background-color: #660f07;
+    justify-self: center;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30px;
+}
+
+#applicationList{
+    height: auto;
+    text-align: center;
+    border: 3.5px solid black;
+}
+
+#stdlist th,#stdlist td{
+    border: 3px solid black;
+    padding: 5px;
+    color: wheat;
+    text-align: center;
+
+}
+
+
+#stdlist_wrapper{
+    width: 95%;
+}
+
+
+#stdlist_wrapper .dt-length{
+    color: wheat;
+}
+
+.dt-search label{
+    color: wheat;
+}
+
+.dt-info{
+    color: wheat;
+}

@@ -1,0 +1,77 @@
+.img_tab{
+    height: 550px;
+    width: 550px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.contact_element_tab{
+    height: 550px;
+    width: 550px;
+    /* background-color: aqua; */
+}
+
+.Contact_title{
+    font-family: fantasy;
+    color: crimson;
+    font-size: 50px;
+    margin-top: 15px;
+    justify-self: center;
+}
+
+.elements_list{
+    margin-top: 50px;
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 15px;
+    align-items: center;
+
+}
+
+.form_tab{
+    height: 650px;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team_title{
+    font-size: 45px;
+    font-family: fantasy;
+}
+
+.form{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.labels{
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    font-size: larger;
+    margin-top: 20px;
+
+}
+
+.inputs{
+    justify-self: center;
+    align-self: center;
+    border: 2px solid black !important;
+    border-style: none;
+    border-radius: 9999px;
+    margin-top: 2px;
+}
+
+.form_btn{
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    border-radius: 9999px;
+}
+
+
+

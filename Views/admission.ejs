@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/admission.css">
+    <%-include("Commons/Title/title.ejs")%>
+    <%-include("Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+    <%-include("Commons/Header/User_header.ejs")%>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 col-lg-4">
+                    <img src="/Img/admission_welcome.jpg" alt="welcome Photo" class="welcome_img">
+                </div>
+                <div class="col-sm-8 col-lg-8 welcome_tab">
+                    <h2 class="welcome_mainheading">Welcome to the beginning of something meaningful</h2>
+                    <p class="welcome_text">Here, learning goes beyond classrooms—into ideas, experiences, and lifelong
+                        growth. We’re excited to walk this journey with you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 d-flex justify-content-center">
+                    <div class="criteria_tab">
+                        <div class="national_tab">
+                            <h2 class="list_heading">Criteria For National Students</h2>
+                            <ul class="list">
+                                <li>Applicant must have completed the required previous class from a recognized national
+                                    board.</li>
+                                <li>Academic records should meet the minimum performance standards set by the
+                                    institution.</li>
+                                <li>Transfer Certificate (TC) from the previous school is mandatory.</li>
+                                <li>Age eligibility must align with the academic year norms.</li>
+                                <li>Proficiency in English is required for effective classroom participation.</li>
+                            </ul>
+                        </div>
+                        <div class="international_tab">
+                            <h2 class="list_heading">Criteria For International Students</h2>
+                            <ul class="list">
+                                <li>Applicant must have completed the previous grade from a recognized international or
+                                    foreign board.</li>
+                                <li>Academic transcripts must be submitted in English or officially translated.</li>
+                                <li>Valid passport and student visa are mandatory at the time of admission.</li>
+                                <li>Proof of English language proficiency may be required.</li>
+                                <li>Health and immunization records as per local regulations must be provided.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form_tab">
+                        <form action="/admission_form" method="post" class="form">
+                            <div class="form_body">
+                                <div class="left_side">
+                                    <label for="name" class="labels">Student Full Name</label>
+                                    <input type="text" name="name" id="name" class="inputs">
+                                    <label for="birthplace" class="labels">Birth Place</label>
+                                    <input type="text" name="birthplace" id="birthplace" class="inputs">
+                                    <label for="gender" class="labels">Gender</label>
+                                    <input type="text" name="gender" id="gender" class="inputs">
+                                    <label for="apply" class="labels">Class Applying For</label>
+                                    <select name="apply" id="apply" class="inputs">
+                                        <option value="" selected disabled>Choose Your Class</option>
+                                        <option value="1">1st</option>
+                                        <option value="2">2nd</option>
+                                        <option value="3">3rd</option>
+                                        <option value="4">4th</option>
+                                        <option value="5">5th</option>
+                                        <option value="6">6th</option>
+                                        <option value="7">7th</option>
+                                        <option value="8">8th</option>
+                                        <option value="9">9th</option>
+                                        <option value="10">10th</option>
+                                        <option value="11a">11-Arts</option>
+                                        <option value="11c">11-Commerce</option>
+                                        <option value="11n">11-Non-Med</option>
+                                        <option value="11m">11-Med</option>
+                                        <option value="12a">12-Arts</option>
+                                        <option value="12c">12-Commerce</option>
+                                        <option value="12n">12-Non-Med</option>
+                                        <option value="12m">12-Med</option>
+                                    </select>
+                                    <label for="parentname" class="labels">Parent/Guardian Name</label>
+                                    <input type="text" class="inputs" name="parentname" id="parentname">
+                                </div>
+                                <div class="right_side">
+                                    <label for="email" class="labels">Student Email</label>
+                                    <input type="email" class="inputs" name="email" id="email">
+                                    <label for="nationality" class="labels">Nationality</label>
+                                    <input type="text" class="inputs" name="nationality">
+                                    <label for="dob" class="labels">Date Of Birth</label>
+                                    <input type="date" class="inputs" name="dob" id="dob">
+                                    <label for="last_school" class="labels">Previous School/Institution(if any)</label>
+                                    <input type="text" class="inputs" name="last_school" id="last_school">
+                                    <label for="parentemail" class="labels">Parent/Guardian's Email</label>
+                                    <input type="email" name="parentemail" id="parentemail" class="inputs">
+                                </div>
+                            </div>
+
+                            <div class="submit_btn_tab">
+                                <button type="submit" class="submit_btn">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <%if(locals.msg){%>
+            <script>
+                alert("<%=msg%>");
+            </script>
+            <%}%>
+
+
+
+
+
+        <%-include("Commons/Footer/user_footer.ejs")%>
+        <%-include("Commons/CDN/script.ejs")%>
+</body>
+</body>
+
+</html>

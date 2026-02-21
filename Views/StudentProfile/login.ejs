@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/student_login.css">
+    <%-include("../Commons/Title/title.ejs")%>
+    <%-include("../Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+
+    <%-include("../Commons/Header/User_header.ejs")%>
+
+    <div class="login_tab">
+        <div class="main_heading_tab">
+            <h2 class="main_heading">Log In</h2>
+        </div>
+        <form action="/slogin" method="post">
+        <div class="form_tab">
+
+            <div class="label_tab">
+                <label for="admission_number" class="labels">Admission Number</label>
+                <label for="password" class="labels">Password</label>
+            </div>
+
+            <div class="input_tab">
+                <input type="number" name="admission_number" id="admission_number" class="inputs">
+                <input type="password" name="password" class="inputs">
+            </div>
+
+        </div>
+
+        <div class="btn_tab">
+            <button class="btnn" type="submit">Submit</button>
+        </div>
+
+        </form>
+
+        
+        <%if(locals.msg){%>
+         <h2 style="color:black;justify-self: center;" id="message"><%=msg%></h2>
+            <%}%> 
+
+        <%if(locals.err){%>
+            <script>
+                alert("<%=err%>");
+            </script>
+            <%}%>
+
+         
+
+    </div>
+
+
+
+
+    <%-include("../Commons/CDN/script.ejs")%>
+</body>
+
+</html>

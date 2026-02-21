@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <%-include("Commons/Title/title.ejs")%>
+        <%-include("Commons/CDN/style.ejs")%>
+</head>
+
+<body>
+    <%-include("Commons/Header/User_header.ejs")%>
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-sm-6 col-sm-6 d-flex justify-content-center">
+                    <div class="img_tab">
+                        <img src="/Img/contact_us2.png" alt="contact Us Image" height="100%" width="100%">
+                    </div>
+                    <div class="contact_element_tab">
+                        <h2 class="Contact_title">Contact Us</h2>
+                        <ul class="elements_list">
+                            <li><i class="bi bi-telephone contact_list_elements text-danger"> +91 0123456789</i></li>
+                            <li><i class="bi bi-telephone contact_list_elements text-danger"> +91 0123456789</i></li>
+                            <li><i class="bi bi-envelope contact_list_elements text-danger"> abc@example.com</i></li>
+                            <li><i class="bi bi-envelope contact_list_elements text-danger"> xyz@example.com</i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6 d-flex justify-content-center">
+                    <div class="form_tab">
+                        <h2 class="team_title text-center text-danger">Our Team Will Reach You</h2>
+                        <form action="/contact" method="post" class="form">
+                            <label for="name" class="labels">Name </label>
+                            <input type="text" name="name" id="name" class="inputs"><br><br>
+                            <label for="email" class="labels">Email </label>
+                            <input type="email" class="inputs" name="email" id="email"><br><br>
+                            <label for="number" class="labels">Phone Number(optional) </label>
+                            <input type="text" class="inputs" name="number" id="number"><br><br>
+                            <label for="message" class="labels">message </label>
+                            <textarea name="messahe" id="message" class="inputs"></textarea><br><br>
+
+                            <button class="form_btn" type="submit">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <%-include("Commons/Footer/user_footer.ejs")%>
+            <%-include("Commons/CDN/script.ejs")%>
+
+</body>
+
+</html>
