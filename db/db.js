@@ -3,7 +3,7 @@ const MySql=require("mysql2");
 const Pool=MySql.createPool({
     host:"localhost",
     user:"root",
-    password:"1234",
+    password:"",
     database:"school_management",
     queueLimit:10,
     waitForConnections:true,

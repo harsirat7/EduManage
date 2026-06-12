@@ -37,7 +37,6 @@ class Auth {
         }
         else {
             const date = new Date().toLocaleDateString("en-CA")
-            console.log(date);
             const data = {
                 date: date,
             };
